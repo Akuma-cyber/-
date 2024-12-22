@@ -1,0 +1,7 @@
+import random
+safe = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+long = int(input("Какая будет длина пароля?"))
+safe2 = ""
+for i in range(long):
+     safe2 += random.choice(safe)
+print(safe2)
